@@ -1,0 +1,39 @@
+<form #frm= "ngForm" (ngSubmit)="addItem(frm)">
+    <h2 id="add-item"> Add item</h2>
+    <div class="form-group">
+        <label for="">Name</label>
+        <input type="text" class="form-control" value="" >
+     </div>
+
+     <div class="form-group">
+        <label for="">Quantite</label>
+        <input type="text" class="form-control" value="" >
+     </div>
+
+     <button type="submit"name="button" class="btn btn-success" >Add item</button>
+</form>
+
+
+
+<h1 id="shopping-item">shopping item</h1>
+<div>
+<div *ngFor="let shopping item" class="">
+    <div id="checkbox">
+        <input type="checkbox" name="" id="">
+    </div>
+    <div id="item-name">
+        {{items.itemName}}
+    </div>
+    <div id="item-quantite">
+        {{items.itemQuantite}}
+    </div>
+    <div id="edit-btn">
+        <input type="button" value="modifier"class="btn btn-primary">
+    </div>
+    <div id="delete-btn">
+        <input type="button" value="supprimer" class="btn btn-danger">
+    </div>
+    <br>
+</div>
+</div>
+ 
